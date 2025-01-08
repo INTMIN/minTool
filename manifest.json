@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "cos二次元人物",
+  "description": "能在网页中插入cos二次元人物",
+  "version": "1.0",
+  "browser_action": {
+    "default_popup": "cos.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://fastly.jsdelivr.net/*"],
+      "css": ["waifu.css"],
+      "js": ["live2d.min.js"]
+    }
+  ],
+  "permissions": ["activeTab", "scripting"]
+}
