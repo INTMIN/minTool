@@ -3,15 +3,15 @@
   "name": "cos二次元人物",
   "description": "能在网页中插入cos二次元人物",
   "version": "1.0",
-  "browser_action": {
-    "default_popup": "cos.html"
+  "action": {
+    "popup": "cos.html"
   },
+
   "content_scripts": [
     {
-      "matches": ["https://fastly.jsdelivr.net/*"],
-      "css": ["waifu.css"],
-      "js": ["live2d.min.js"]
+      "matches": ["*://*/*"],
+      "css": ["wanfu.css"]
     }
   ],
-  "permissions": ["activeTab", "scripting"]
+  "permissions": ["storage", "tabs", "activeTab", "https://*/*", "scripting"]
 }
