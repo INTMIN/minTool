@@ -1,5 +1,5 @@
 {
-  "manifest_version": 3,
+  "manifest_version": 2,
   "name": "cos二次元人物",
   "description": "能在网页中插入cos二次元人物",
   "version": "1.0",
@@ -10,6 +10,7 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
+      "js": ["live2d.js", "wanfu.js", "content.js"],
       "css": ["wanfu.css"]
     }
   ],
