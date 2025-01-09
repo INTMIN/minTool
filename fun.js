@@ -1,8 +1,3 @@
-// document.getElementById("myButton").addEventListener("click", function () {
-//   let newURL = "https://www.google.com";
-//   chrome.tabs.create({ url: newURL });
-// });
-
 
 chrome.webNavigation.onDOMContentLoaded.addListener(async ({ tabId, url }) => {
   if (url !== 'https://example.com/#inject-programmatic') return;
@@ -33,11 +28,3 @@ chrome.webNavigation.onDOMContentLoaded.addListener(async ({ tabId, url }) => {
   
 });
 
-chrome.runtime.onMessage.addListener(async ({ name, options }) => {
-  if (name === 'inject-programmatic') {
-    await chrome.storage.local.set({ options });
-    await chrome.tabs.create({
-      url: 'https://example.com/#inject-programmatic'
-    });
-  }
-});
