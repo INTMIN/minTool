@@ -1,11 +1,8 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "cos二次元人物",
   "description": "能在网页中插入cos二次元人物",
   "version": "1.0",
-  "action": {
-    "popup": "cos.html"
-  },
 
   "content_scripts": [
     {
