@@ -29,7 +29,7 @@
       // 配置选项的具体用法见 README.md
       initWidget({
         waifuPath: live2d_path + "waifu-tips.json",
-        cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
+        cdnPath: live2d_path,
         tools: [
           "hitokoto",
           "asteroids",
