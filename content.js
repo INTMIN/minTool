@@ -22,7 +22,7 @@
 
 // live2d_path 参数建议使用绝对路径
   const live2d_path =
-    "https://fastly.jsdelivr.net/gh/INTMIN/live2d-widget@latest/";
+    "https://intmin.github.io/live2d-widget/";
 
 
   if (screen.width >= 768) {
