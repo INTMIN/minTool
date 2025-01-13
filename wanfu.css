@@ -46,7 +46,7 @@
 	font-size: 14px;
 	line-height: 24px;
 	margin: -30px 20px;
-	min-height: 70px;
+	min-height: 80px;
 	opacity: 0;
 	overflow: hidden;
 	padding: 5px 10px;
@@ -68,9 +68,9 @@
 
 #live2d {
 	cursor: grab;
-	height: 300px;
+	height: 350px;
 	position: relative;
-	width: 300px;
+	width: 350px;
 }
 
 #live2d:active {
