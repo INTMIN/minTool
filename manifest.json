@@ -17,5 +17,6 @@
       "css": ["wanfu.css"]
     }
   ],
-  "permissions": ["storage", "tabs", "https://*/*", "activeTab", "scripting"]
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "permissions": ["storage", "tabs", "activeTab", "scripting"]
 }
