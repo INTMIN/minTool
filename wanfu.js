@@ -48,8 +48,8 @@
         const o = e(this.modelList.models[t]);
         loadlive2d("live2d", `${this.cdnPath}model/${o}/index.json`);
       } else
-        loadlive2d("live2d", `${this.apiPath}get/?id=${t}-${s}`),
-          console.log(`Live2D 模型 ${t}-${s} 加载完成`);
+        loadlive2d("live2d", `${this.apiPath}get/?id=${t}-${s}`)
+          // console.log(`Live2D 模型 ${t}-${s} 加载完成`);
     }
     async loadRandModel() {
       const t = localStorage.getItem("modelId"),
@@ -220,7 +220,7 @@
             ((o = (o = e(o)).replace("{year}", s.getFullYear())), i.push(o));
         });
       const c = () => {};
-      console.log("%c", c),
+      // console.log("%c", c),
         (c.toString = () => {
           o(t.message.console, 6e3, 9);
         }),
